@@ -2,7 +2,7 @@ name: Android CI
 
 on:
   push:
-    branches: [ "main", "feature/mjpeg-streaming-step1" ]
+    branches: [ "main", "feature-mjpeg-streaming-step1" ]
   pull_request:
     branches: [ "main" ]
 
