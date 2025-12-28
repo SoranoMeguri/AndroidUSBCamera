@@ -82,7 +82,7 @@
         android:id="@+id/contact"
         style="@style/Camera2MoreSettingsImageStyle"
         android:src="@mipmap/camera_more_contact"
-        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintEnd_toStartOf="@id/device_info"
         app:layout_constraintStart_toEndOf="@id/resolution"
         app:layout_constraintTop_toTopOf="@id/background" />
 
@@ -95,6 +95,24 @@
         app:layout_constraintEnd_toEndOf="@+id/contact"
         app:layout_constraintStart_toStartOf="@+id/contact"
         app:layout_constraintTop_toBottomOf="@+id/contact" />
+
+    <ImageView
+        android:id="@+id/device_info"
+        style="@style/Camera2MoreSettingsImageStyle"
+        android:src="@drawable/ic_info_outline"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@id/contact"
+        app:layout_constraintTop_toTopOf="@id/background" />
+
+    <TextView
+        android:id="@+id/device_info_text"
+        style="@style/Camera2MoreSettingsTextStyle"
+        android:ellipsize="end"
+        android:maxLines="1"
+        android:text="@string/device_info"
+        app:layout_constraintEnd_toEndOf="@+id/device_info"
+        app:layout_constraintStart_toStartOf="@+id/device_info"
+        app:layout_constraintTop_toBottomOf="@+id/device_info" />
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>

@@ -483,11 +483,20 @@ class DemoFragment : CameraFragment(), View.OnClickListener, CaptureMediaView.On
                     mMoreBindingView.contact, mMoreBindingView.contactText -> {
                         showContactDialog()
                     }
+                    mMoreBindingView.deviceInfo, mMoreBindingView.deviceInfoText -> {
+                        showDeviceInfoDialog()
+                    }
                     else -> {
                     }
                 }
             }
         })
+    }
+
+    private fun showDeviceInfoDialog() {
+        mMoreMenu?.dismiss()
+        DeviceListDialogFragment.newInstance(getCurrentCamera())
+            .show(childFragmentManager, "DeviceInfo")
     }
 
     @SuppressLint("CheckResult")
@@ -781,6 +790,8 @@ class DemoFragment : CameraFragment(), View.OnClickListener, CaptureMediaView.On
                 mMoreBindingView.resolutionText.setOnClickListener(this@DemoFragment)
                 mMoreBindingView.contract.setOnClickListener(this@DemoFragment)
                 mMoreBindingView.contractText.setOnClickListener(this@DemoFragment)
+                mMoreBindingView.deviceInfo.setOnClickListener(this@DemoFragment)
+                mMoreBindingView.deviceInfoText.setOnClickListener(this@DemoFragment)
                 mMoreMenu = PopupWindow(
                     this,
                     ViewGroup.LayoutParams.MATCH_PARENT,

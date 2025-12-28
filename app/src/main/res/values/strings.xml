@@ -1,6 +1,20 @@
 <resources>
     <string name="app_name" translatable="false">AUSBC3</string>
-    <string name="permission_tip" translatable="false">You have already denied permission access. Go to the Settings page to turn on permissions</string>
-    <string name="dialog_contact_title" translatable="false">Contact me:</string>
+    <string name="permission_tip" translatable="false">権限が拒否されています。設定画面から権限を有効にしてください</string>
+    <string name="dialog_contact_title" translatable="false">連絡先:</string>
     <string name="dialog_contact_message" translatable="false">765067602@qq.com\n\n❤ version: %s</string>
+
+    <!-- New Strings for Device Info Modal -->
+    <string name="device_info">デバイス情報</string>
+    <string name="device_list_title">接続デバイス一覧</string>
+    <string name="resolution">解像度: </string>
+    <string name="fps">FPS: </string>
+    <string name="color_format">色方式: </string>
+    <string name="connection_type">接続方式: </string>
+    <string name="unknown">不明</string>
+    <string name="active">稼働中</string>
+    <string name="inactive">待機中</string>
+    <string name="raw_info">詳細情報</string>
+    <string name="multiplex">多重化</string>
+    <string name="contract">対比</string>
 </resources>
